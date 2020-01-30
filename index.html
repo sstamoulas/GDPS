@@ -4,19 +4,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-attachment: fixed;
+        background-image: url("./assets/images/hero.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .text-color {
+        color: white;
+        opacity: 0.75;
+      }
+
+      .center-screen {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .nav-item {
+        background-color: lightgrey;
+        border-color: #dee2e6 #dee2e6 #fff;
+      }
+    </style>
   </head>
   <body>
 
     <div class="container">
-      <h1 class="text-center">Grecian Delights Catering</h1>
-      <h2 class="text-center">For all your catering needs</h2>
-      <h4 class="text-center">We stick with tradition and make it like Yia Yia!</h4>
-      <div class="text-center">Georgia Stavrou, Entrepreneur</div>
-      <div class="text-center">Email: greciandelightscatering@gmail.com</div>
-
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <ul class="nav nav-tabs nav-fill d-flex justify-content-around" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">About Us</a>
@@ -34,11 +61,18 @@
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-pane text-color center-screen fade show active" id="hero" role="tabpanel" aria-labelledby="hero-tab">
+          <div class="hero-text" id="hero-tab" data-toggle="tab" href="#hero" role="tab" aria-controls="hero" aria-selected="true">
+            <h1 class="text-center">Grecian Delights Catering</h1>
+            <h2 class="text-center">For all your catering needs</h2>
+            <h4 class="text-center">We stick with tradition and make it like Yia Yia!</h4>
+          </div>
+        </div>
+        <div class="tab-pane text-color center-screen fade" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div class="container">Grecian Delights Catering welcomes you to come into Yia Yia’s kitchen where she often loved to be.  Yia Yia enjoyed entertaining and surrounding herself with family and friends especially during the holidays.  Her love was authentic and genuine and these characteristics of Yia Yia will live on as Grecian Delights Catering brings Yia Yia’s Greek foods to your home.
           </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane text-color center-screen fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           <div class="container">
             <p>Georgia Stavrou, is the passionate owner of Grecian Delights Catering but she owes her desire to introduce authentic foods to her mother, Dianne Ivkovich-Stavrou.  Even though Georgia’s mother was not born Greek, she was told that she could whip up the best Greek dishes and desserts better than any Greek woman.  Georgia was proud to have a mother that represented a Greek culture better than anyone else and it showed in her passion to cook Greek foods.  We especially enjoyed watching Yia Yia roll meatballs, potato pancakes, or crescent moon cookies because her cute, stubby little fingers always shaped these foods to perfection.  It was a joy to watch while growing up.</p>
             <p>Georgia married and often came to her mother, now Yia Yia, for her recipes as her desire to keep Yia Yia’s love for Greek foods alive.  She would find many ways to share Yia Yia’s Greek dishes by attending various meetings in her community and donating her goods or giving them to friends and neighbors to taste. Georgia’s love to share Yia Yia’s dishes came to reality when she often had requests to bake Greek cookies. Soon orders were coming in to make special foods such as Pastisio and Spanakopita; hence, Georgia knew that there was a business for Yia Yia’s Greek authentic foods.</p>
@@ -46,7 +80,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
-          <h2 class="text-center">Appetizers</h2>
+          <h2 class="text-center text-color">Appetizers</h2>
           <div class="card mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
@@ -110,9 +144,10 @@
               </div>
             </div>
           </div>
+          <footer class="text-center text-color">$10 delivery charge will be added to total </footer>
         </div>
         <div class="tab-pane fade" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
-          <h2 class="text-center">Entrees</h2>
+          <h2 class="text-center text-color">Entrees</h2>
           <div class="card mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
@@ -188,9 +223,10 @@
               </div>
             </div>
           </div>
+          <footer class="text-center text-color">$10 delivery charge will be added to total </footer>
         </div>
         <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
-          <h2 class="text-center">Desserts</h2>
+          <h2 class="text-center text-color">Desserts</h2>
           <div class="card mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
@@ -295,8 +331,9 @@
               </div>
             </div>
           </div>
+          <footer class="text-center text-color">$10 delivery charge will be added to total </footer>
         </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="tab-pane text-color center-screen fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
           Order by Email at greciandelightscatering@gmail.com
           Find us on:
           Facebook
@@ -305,7 +342,6 @@
         </div>
       </div>
 
-    <footer class="text-center">$10 delivery charge will be added to total </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
   </body>
 </html>
