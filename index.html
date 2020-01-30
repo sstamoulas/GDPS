@@ -2,139 +2,311 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <div class="container">
       <h1 class="text-center">Grecian Delights</h1>
-      <h1 class="text-center">Pastry Shop</h1>
+      <h1 class="text-center">Catering</h1>
       <h2 class="text-center">For all your catering needs</h2>
       <h4 class="text-center">We stick with tradition and make it like Yia Yia!</h4>
       <div class="text-center">Georgia Stavrou, Entrepreneur</div>
-      <div class="text-center">Email: greciandelightspastryshop@gmail.com</div>
+      <div class="text-center">Email: greciandelightscatering@gmail.com</div>
 
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/keftedes.png" class="card-img" alt="...">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" id="appetizers-tab" data-toggle="tab" href="#appetizers" role="tab" aria-controls="appetizers" aria-selected="false">Appetizers</a>
+            <a class="dropdown-item" id="entrees-tab" data-toggle="tab" href="#entrees" role="tab" aria-controls="entrees" aria-selected="false">Entrees</a>
+            <a class="dropdown-item" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Greek Meatballs aka Keftedes</h5>
-              <p class="card-text">Authentic family recipe made with ground beef chuck bursting with spices and flavors of mint, parsley, garlic, onions, and oregano.</p>
-              <p class="card-text"><small class="text-muted">$15.00 for 20 pieces</small></p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">Grecian Delights Catering welcomes you to come into Yia Yia’s kitchen where she often loved to be.  Yia Yia enjoyed entertaining and surrounding herself with family and friends especially during the holidays.  Her love was authentic and genuine and these characteristics of Yia Yia will live on as Grecian Delights Catering brings Yia Yia’s Greek foods to your home.
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="container">
+            <p>Georgia Stavrou, is the passionate owner of Grecian Delights Catering but she owes her desire to introduce authentic foods to her mother, Dianne Ivkovich-Stavrou.  Even though Georgia’s mother was not born Greek, she was told that she could whip up the best Greek dishes and desserts better than any Greek woman.  Georgia was proud to have a mother that represented a Greek culture better than anyone else and it showed in her passion to cook Greek foods.  We especially enjoyed watching Yia Yia roll meatballs, potato pancakes, or crescent moon cookies because her cute, stubby little fingers always shaped these foods to perfection.  It was a joy to watch while growing up.</p>
+            <p>Georgia married and often came to her mother, now Yia Yia, for her recipes as her desire to keep Yia Yia’s love for Greek foods alive.  She would find many ways to share Yia Yia’s Greek dishes by attending various meetings in her community and donating her goods or giving them to friends and neighbors to taste. Georgia’s love to share Yia Yia’s dishes came to reality when she often had requests to bake Greek cookies. Soon orders were coming in to make special foods such as Pastisio and Spanakopita; hence, Georgia knew that there was a business for Yia Yia’s Greek authentic foods.</p>
+            <p>Yia Yia has passed on but her recipes still live on, hence Grecian Delights Catering came into existence in 2020. Grecian Delights Catering prepares everything from scratch because that’s how Yia Yia cooked. So, in memory of Yia Yia, only the best, authentic foods are introduced because "We stick with tradition and make it like Yia Yia!"</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
+          <h2 class="text-center">Appetizers</h2>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/keftedes.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Greek Meatballs (Keftedes)</h5>
+                  <p class="card-text">Authentic family recipe made with ground beef chuck bursting with spices and flavors of mint, parsley, garlic, onions, and oregano.</p>
+                  <p class="card-text"><small class="text-muted">20 pieces for $15.00</small></p>
+                  <p class="card-text"><small class="text-muted">40 pieces for $28.00</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/dolmades.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Stuffed Grape Leaves (Dolmades)</h5>
+                  <p class="card-text">Grape leaves are rolled and stuffed with a tantalizing mixture of rice, dill, onions and a splash of lemon juice. A vegetarian appetizer or can be eaten as a main-course meal.</p>
+                  <p class="card-text"><small class="text-muted">20 pieces for $12.00</small></p>
+                  <p class="card-text"><small class="text-muted">40 pieces for $22.00</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/kefetedes.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Potato Kefetedes</h5>
+                  <p class="card-text">Made with mashed potatoes, Greek cheese, and fresh herbs, coated with flour and deep fried to golden perfection. Comfort food.</p>
+                  <p class="card-text"><small class="text-muted">20 pieces for $16.00</small></p>
+                  <p class="card-text"><small class="text-muted">40 pieces for $30.00</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/tzatziki.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tzatziki Sauce</h5>
+                  <p class="card-text">Made with Greek yogurt, cucumbers, garlic, salt, pepper, dill, and a splash of lemon juice. Can be used as a dip or added to salads as a dressing.</p>
+                  <p class="card-text"><small class="text-muted">8oz cup for $10.00</small></p>
+                  <p class="card-text"><small class="text-muted">16oz cup for $18.00</small></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/dolmades.png" class="card-img" alt="...">
+        <div class="tab-pane fade" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+          <h2 class="text-center">Entrees</h2>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/spanakopita.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Spinach Pie (Spanakopita)</h5>
+                  <p class="card-text">A Greek pie made with layers of phyllo and filling of seasoned spinach, dill, onions, feta and eggs. Can be cut as apetizers or eaten as a main-course meal.</p>
+                  <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan) Serves a party of 24</small></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Stuffed Grape Leaves aka Dolmades</h5>
-              <p class="card-text">Grape leaves are rolled and stuffed with a tantalizing mixture of rice, dill, onions and a splash of lemon juice. A vegetarian appetizer or can be eaten as a main-course meal.</p>
-              <p class="card-text"><small class="text-muted">$12.00 for 20 pieces</small></p>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/pastisio.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Greek Lasagna (Pastisio)</h5>
+                  <p class="card-text">A Greek baked dish using ground beef chuck with red sauce layered with pasta and topped with white creamy white sauce and cheese.</p>
+                  <p class="card-text"><small class="text-muted">$84.00 (½ sheet 12x20 pan) Serves a party of 24</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/youvetsi.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Orzo and Meat (Youvetsi)</h5>
+                  <p class="card-text">A delicious baked Greek pasta dish made with beef cubes served on a bed of rice (orzo) mixed with red sauce, seasoned with an explosion of spices and topped with feta cheese.</p>
+                  <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan) Serves a party of 12</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/avgolemono.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Avgolemono with Rice and Red Sauce</h5>
+                  <p class="card-text">This is a classic Greek dish made with chicken, rice, eggs and lemon. Chicken is then separated and added to a pan to cook with additional rice with red sauce poured on top. This is a great three-course meal.</p>
+                  <p class="card-text"><small class="text-muted">$79.00 (½ sheet 12x20 pan) Serves a party of 24</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/horiatiki.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Greek Village Salad (Horiatiki)</h5>
+                  <p class="card-text">This is a classic village salad commonly served as part of any meal and is made from delicious cucumbers, tomatoes, green peppers, red onions, pepperoncino, kalamata olives, feta, and seasoned with salt, pepper and Greek favorite herbs. Served with Greek dressing.</p>
+                  <p class="card-text"><small class="text-muted">$50.00 Serves a party of 10</small></p>
+                  <p class="card-text"><small class="text-muted">$95.00 Serves a party of 20</small></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/spanakopita.png" class="card-img" alt="...">
+        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+          <h2 class="text-center">Desserts</h2>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/baklava.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Baklava</h5>
+                  <p class="card-text">Nuts sweetened, layered with filo and topped with homemade syrup.</p>
+                  <p class="card-text"><small class="text-muted">$84.00 (1/2 sheet-12x20) Serves a party of 24 to 48 pieces</small></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Spinach Pie aka Spanakopita</h5>
-              <p class="card-text">A Greek pie made with layers of phyllo and filling of seasoned spinach, dill, onions, feta and eggs. Can be cut as apetizers or eaten as a main-course meal</p>
-              <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan)</small></p>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/galatoboureko.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Galatoboureko</h5>
+                  <p class="card-text">Farina cream pastry rolled in filo and covered with homemade syrup.</p>
+                  <p class="card-text"><small class="text-muted">$72.00 (1/2 sheet-12x20) Serves a party of 24</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/halvah.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Halvah</h5>
+                  <p class="card-text">This is a classic village salad commonly served as part of any meal and is made from delicious cucumbers, Nut-filled farina cream pastry with homemade syrup and topped with maraschino cherries.</p>
+                  <p class="card-text"><small class="text-muted">$70.00 (½ sheet-12x20) Serves a party of 24</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/finikia.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Finikia</h5>
+                  <p class="card-text">Nut-filled honey dainties dipped in homemade syrup and topped with nuts.</p>
+                  <p class="card-text"><small class="text-muted">$48.00 (5 dozen)</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/kourambiedes.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Kourambiedes</h5>
+                  <p class="card-text">Moon crescent nut-filled cookie topped with confectioner sugar.</p>
+                  <p class="card-text"><small class="text-muted">$45.00 (5 dozen)</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/koulourakia.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Koulourakia</h5>
+                  <p class="card-text">Butter-twisted cookies with vanilla or almond flavor.</p>
+                  <p class="card-text"><small class="text-muted">$40.00 (5 dozen)</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/rice-pudding.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Rice Pudding</h5>
+                  <p class="card-text">Made with rice, whole milk, sugar and topped with cinnamon.</p>
+                  <p class="card-text"><small class="text-muted">$30.00 (15 8oz cups)</small></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/pastisio.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Greek Lasagna aka Pastisio</h5>
-              <p class="card-text">A Greek baked dish using ground beef chuck with red sauce layered with pasta and topped with white creamy white sauce and cheese</p>
-              <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan)</small></p>
-            </div>
-          </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          Order by Email at greciandelightscatering@gmail.com
+          Find us on:
+          Facebook
+          Instagram
+          Pinterest
         </div>
       </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/youvetsi.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Orzo and Meat aka Youvetsi</h5>
-              <p class="card-text">A delicious baked Greek pasta dish made with beef cubes served on a bed of rice (orzo) mixed with red sauce, seasoned with an explosion of spices and topped with feta cheese</p>
-              <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan)</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/avgolemono.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Chicken Avgolemono with Rice and Red Sauce</h5>
-              <p class="card-text">This is a classic Greek dish made with chicken, rice, eggs and lemon. Chicken is then separated and added to a pan to cook with additional rice with red sauce poured on top. This is a great three-course meal</p>
-              <p class="card-text"><small class="text-muted">$75.00 (½ sheet 12x20 pan)</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/horiatiki.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Greek Village Salad aka Horiatiki</h5>
-              <p class="card-text">This is a classic village salad commonly served as part of any meal and is made from delicious cucumbers, tomatoes, green peppers, red onions, pepperoncino, kalamata olives, feta, and seasoned with salt, pepper and Greek favorite herbs. Served with Greek dressing</p>
-              <p class="card-text"><small class="text-muted">$35.00 (½ sheet 12x20 pan)</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="./assets/images/tzatziki.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Tzatziki Sauce</h5>
-              <p class="card-text">Made with Greek yogurt, cucumbers, garlic, salt, pepper, dill, and a splash of lemon juice. Can be used as a dip or added to salads as a dressing</p>
-              <p class="card-text"><small class="text-muted">$10.00 8oz cups</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer class="text-center">$10 delivery charge will be added to total </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
   </body>
 </html>
